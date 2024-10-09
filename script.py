@@ -7,14 +7,14 @@ wn.title("Turtle")
 def draw_heart(size, color):
     turtle.begin_fill()
     turtle.color(color)
-    turtle.left(50)
+    turtle.left(45)
     turtle.forward(size)
     turtle.circle(size / 2, 180)
     turtle.right(90)
     turtle.circle(size / 2, 180)
     turtle.forward(size)
     turtle.end_fill()
-    turtle.left(40)
+    turtle.left(45)
     turtle.ht()
 
 def txt():
