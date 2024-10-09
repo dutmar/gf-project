@@ -31,7 +31,7 @@ def main():
     draw_heart(60, 'purple')
     draw_heart(40, 'pink')
     draw_heart(20, 'purple')
-    # txt()
+    txt()
     turtle.exitonclick()
 
 if __name__=="__main__":
