@@ -1,44 +1,37 @@
 import turtle
 
 wn = turtle.Screen()
-wn.bgcolor("light green")
+wn.bgcolor("turquoise")
 wn.title("Turtle")
-skk = turtle.Turtle()
-skk.speed('fastest')
 
-def curve():
-    for i in range(200):  
-        skk.right(1) 
-        skk.forward(1) 
-
-def draw():
-    skk.fillcolor('purple')
-    skk.begin_fill()
-
-    skk.left(140)
-    skk.forward(113)
-
-    curve()
-
-    skk.left(120)
-
-    curve()
-
-    skk.forward(112)
-
-    skk.end_fill()
+def draw_heart(size, color):
+    turtle.begin_fill()
+    turtle.color(color)
+    turtle.left(50)
+    turtle.forward(size)
+    turtle.circle(size / 2, 180)
+    turtle.right(90)
+    turtle.circle(size / 2, 180)
+    turtle.forward(size)
+    turtle.end_fill()
+    turtle.left(40)
+    turtle.ht()
 
 def txt():
-    skk.up()
-    skk.setpos(-50, -50)
-    skk.down()
-    skk.pensize(10)
-    skk.write("Love you Bebich", font=("Arial", 16, "normal"))
-    skk.ht()
+    turtle.up()
+    turtle.setpos(0, -50)
+    turtle.down()
+    turtle.pensize(10)
+    turtle.write("Love you Bebich", align='center', font=("Arial", 16, "normal"))
+    turtle.ht()
 
 def main():
-    draw()
-    txt()
+    draw_heart(100, 'purple')
+    draw_heart(80, 'pink')
+    draw_heart(60, 'purple')
+    draw_heart(40, 'pink')
+    draw_heart(20, 'purple')
+    # txt()
     turtle.exitonclick()
 
 if __name__=="__main__":
